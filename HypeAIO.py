@@ -23,7 +23,7 @@ def main():
     x= license_key.split()
     license_key=((x[1]).replace('"',"")).replace(',','')
     headers = {
-        'Authorization': f'Bearer pk_bwvPcnhnraLbzQU7DqKP0hHpSPDrEN5p'
+        'Authorization': f'Bearer '
     }
     response = requests.get(f'https://api.hyper.co/v4/licenses/{license_key}', headers=headers)
     if response.status_code == 200:
